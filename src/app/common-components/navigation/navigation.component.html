@@ -1,40 +1,8 @@
-<style>
-    .verto-body {
-        display: grid;
-        grid-template-areas:
-            'header header header header header header'
-            'menu main main main main main'
-        ;
-        grid-template-rows: 80px calc(100vh - 80px);
-        height: 100vh;
-    }
-
-    .verto-header {
-        grid-area: header;
-        min-height: 10vh;
-    }
-
-    .verto-sidebar {
-        grid-area: menu;
-        background-color: aqua;
-    }
-
-    .verto-content {
-        grid-area: main;
-        background-color: blue
-    }
-
-</style>
-
-
-<div class="verto-body">
-    <div class="verto-header">Header</div>
-    <div class="verto-sidebar">
-        <app-side-bar></app-side-bar>
+<header class="header body-pd" id="header">
+    <div class="header_toggle">
+        <i class="bx bx-menu bx-x" id="header-toggle" (click)="handlelHeaderToggle($event)"></i>
     </div>
-    <div class="verto-content">
-        <ng-content>
-
-        </ng-content>
+    <div class="header_img">
+        <img src="https://i.imgur.com/hczKIze.jpg" alt="">
     </div>
-</div>
+</header>

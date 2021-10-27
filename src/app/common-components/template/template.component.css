@@ -1,0 +1,30 @@
+    .verto-body {
+        display: grid;
+        grid-template-areas: 'menu header header header header header' 'menu main main main main main';
+        grid-template-columns: 230px auto auto auto auto;
+        grid-template-rows: 80px calc(100vh - 80px);
+        height: 100vh;
+    }
+    
+    .verto-body-narrow {
+        display: grid;
+        grid-template-areas: 'menu header header header header header' 'menu main main main main main';
+        grid-template-columns: 60px auto auto auto auto;
+        grid-template-rows: 80px calc(100vh - 80px);
+        height: 100vh;
+    }
+    
+    .verto-header {
+        grid-area: header;
+        min-height: 10vh;
+    }
+    
+    .verto-sidebar {
+        grid-area: menu;
+        background-color: #f2f3f9;
+    }
+    
+    .verto-content {
+        grid-area: main;
+        /* background-color: blue */
+    }
