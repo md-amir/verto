@@ -7,6 +7,8 @@ hr {
     height: 100%;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #aabbcc3d;
+  
 }
 
 .header-left,
@@ -15,6 +17,10 @@ hr {
     flex: 0.5;
     display: flex;
     gap: 20px;
+}
+
+.header-right{
+    justify-content:flex-end;
 }
 
 .home {

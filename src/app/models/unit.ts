@@ -5,4 +5,5 @@ export interface Unit {
     group: string;
     lastUpdatedDate: string;
     createdDate: string;
+    status: boolean;
 }
