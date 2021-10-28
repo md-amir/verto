@@ -19,8 +19,8 @@ export class SideBarComponent implements OnInit {
     var linkColor = this.document.querySelectorAll('.sidebar_link') as NodeList;
     if (linkColor) {
       linkColor.forEach(l => {
-        var a = l as HTMLElement
-        a.classList.remove('nav-active')
+        var aNode = l as HTMLElement
+        aNode.classList.remove('nav-active')
       })
     }
     (event.currentTarget as HTMLElement).classList.toggle('nav-active');

@@ -1,0 +1,16 @@
+table {
+    width: 90%;
+}
+
+td.mat-column-star {
+    width: 20px;
+    padding-right: 8px;
+}
+
+.star-active {
+    color: rgb(240, 167, 77);
+}
+
+.star-inactive {
+    color: bisque;
+}
