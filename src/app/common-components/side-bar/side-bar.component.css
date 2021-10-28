@@ -13,12 +13,16 @@
     flex-wrap: nowrap;
 }
 
-.nav_logo {
-    margin-bottom: 2rem;
+.sidebar_logo {
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
-.nav_logo,
-.nav_link {
+.sidebar_logo img {
+    width: 120px;
+}
+
+.sidebar_link {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -27,18 +31,18 @@
     justify-content: start;
 }
 
-.nav_link {
+.sidebar_link {
     color: #000;
     margin-bottom: 12px;
     text-decoration: none;
     font-size: 14px;
 }
 
-.nav_icon {
+.sidebar_icon {
     font-size: 1.0rem;
 }
 
-.nav_logo-name {
+.sidebar_logo-name {
     color: var(--white-color);
     font-weight: 700;
 }
