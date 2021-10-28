@@ -1,7 +1,11 @@
 import { SelectionModel } from '@angular/cdk/collections';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Unit } from 'src/app/models/unit';
+
+type NewType = MatSort;
 
 @Component({
   selector: 'app-all-units',
@@ -12,6 +16,10 @@ export class AllUnitsComponent implements OnInit {
   displayedColumns: string[] = ['select', 'star', 'id', 'name', 'shortCode', 'group', 'lastUpdatedDate', 'createdDate', 'status', 'option'];
   dataSource = new MatTableDataSource<Unit>(ELEMENT_DATA);
   selection = new SelectionModel<Unit>(true, []);
+  @ViewChild('unitPaginator', { static: true }) unitPaginator!: MatPaginator;
+  @ViewChild(MatSort) unitSort!: MatSort;
+
+
 
   constructor() { }
 
