@@ -8,6 +8,8 @@ import { Component, Inject, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
+  verto: HTMLElement | undefined;
+
   constructor(@Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
@@ -20,9 +22,15 @@ export class SideBarComponent implements OnInit {
         var a = l as HTMLElement
         a.classList.remove('nav-active')
       })
-      // this.classList.add('active')
     }
     (event.currentTarget as HTMLElement).classList.toggle('nav-active');
+  }
+
+  handlelHeaderToggle(event: Event): void {
+    (event.currentTarget as HTMLElement).classList.toggle('bx-x');
+    this.verto = document.getElementById('verto-body') as HTMLElement;
+    this.verto.classList.toggle('verto-body');
+    this.verto.classList.toggle('verto-body-narrow');
   }
 
 }

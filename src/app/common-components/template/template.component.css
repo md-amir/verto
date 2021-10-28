@@ -9,7 +9,7 @@
     .verto-body-narrow {
         display: grid;
         grid-template-areas: 'menu header header header header header' 'menu main main main main main';
-        grid-template-columns: 60px auto auto auto auto;
+        grid-template-columns: 50px auto auto auto auto;
         grid-template-rows: 80px calc(100vh - 80px);
         height: 100vh;
     }
