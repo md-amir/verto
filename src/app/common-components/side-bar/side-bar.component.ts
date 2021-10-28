@@ -16,7 +16,7 @@ export class SideBarComponent implements OnInit {
   }
 
   handleNavLinkClick(event: Event) {
-    var linkColor = this.document.querySelectorAll('.nav_link') as NodeList;
+    var linkColor = this.document.querySelectorAll('.sidebar_link') as NodeList;
     if (linkColor) {
       linkColor.forEach(l => {
         var a = l as HTMLElement

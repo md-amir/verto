@@ -2,8 +2,9 @@
         display: grid;
         grid-template-areas: 'menu header header header header header' 'menu main main main main main';
         grid-template-columns: 200px auto auto auto auto;
-        grid-template-rows: 80px calc(100vh - 80px);
+        grid-template-rows: 100px calc(100vh - 100px);
         height: 100vh;
+        gap:20px;
     }
     
     .verto-body-narrow {
