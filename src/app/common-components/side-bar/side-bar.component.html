@@ -4,31 +4,48 @@
             <a href="#" class="nav_logo">
                 <img src="../../../assets/logo.png" alt="Logo" width="100" />
             </a>
-            <p class="nav_link">Admin <span class="btn-arrow"><i class="arrow down nav_icon"></i></span></p>
+            <p class="nav_link admin-label">Admin
+                <span class="btn-arrow">
+                    <i class="bi bi-chevron-down"></i>
+                </span>
+            </p>
             <div class="nav_list">
                 <a href="#" class="nav_link" (click)="handleNavLinkClick($event)">
-                    <i class="bx bx-grid-alt nav_icon"></i>
-                    <span class="nav_name">Dashboard</span>
+                    <i class="bi bi-printer-fill"></i>
+                    <span class="nav_name">Units</span>
                 </a>
                 <a href="#" class="nav_link" (click)="handleNavLinkClick($event)">
-                    <i class="bx bx-user nav_icon"></i>
+                    <i class="bi bi-bezier"></i>
+                    <span class="nav_name">Pathways</span>
+                </a>
+                <a href="#" class="nav_link" (click)="handleNavLinkClick($event)">
+                    <i class="bi bi-grid-1x2-fill"></i>
+                    <span class="nav_name">Templates</span>
+                </a>
+                <a href="#" class="nav_link" (click)="handleNavLinkClick($event)">
+                    <i class="bi bi-people-fill"></i>
                     <span class="nav_name">Users</span>
                 </a>
+                <a href="#" class="nav_link active" (click)="handleNavLinkClick($event)">
+                    <i class="bi bi-person-fill"></i>
+                    <span class="nav_name">Role</span>
+                </a>
                 <a href="#" class="nav_link" (click)="handleNavLinkClick($event)">
-                    <i class="bx bx-message-square-detail nav_icon"></i>
-                    <span class="nav_name">Messages</span> </a>
-                <a href="#" class="nav_link">
-                    <i class="bx bx-bookmark nav_icon"></i> <span class="nav_name">Bookmark</span>
-                </a>
-                <a href="#" class="nav_link active">
-                    <i class="bx bx-folder nav_icon"></i> <span class="nav_name">Files</span>
-                </a>
-                <a href="#" class="nav_link">
-                    <i class="bx bx-bar-chart-alt-2 nav_icon"></i> <span class="nav_name">Stats</span>
+                    <i class="bi bi-calendar3"></i>
+                    <span class="nav_name">Appointments</span>
                 </a>
             </div>
         </div>
-        <a href="#" class="nav_link"> <i class="bx bx-log-out nav_icon"></i> <span class="nav_name">SignOut</span>
-        </a>
+        <div class="sidebar-arrow">
+            <i class="bi bi-chevron-left"></i>
+        </div>
+        <div class="sidebar-floor">
+            <a href="#">Verto flow support</a>
+            <p>aks-apppool-3724545544</p>
+            <p>powerd by <a href="#">verto health</a></p>
+
+            <a href="#">Privacy Policy</a>
+        </div>
+
     </nav>
 </div>

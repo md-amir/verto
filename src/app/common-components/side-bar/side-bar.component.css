@@ -1,9 +1,6 @@
 .l-navbar {
-    top: 0;
     height: 100vh;
     padding: 0.5rem 0 0 0;
-    transition: .5s;
-    z-index: var(--z-fixed);
 }
 
 .nav {
@@ -13,6 +10,7 @@
     justify-content: space-between;
     overflow: hidden;
     padding-left: 15px;
+    flex-wrap: nowrap;
 }
 
 .nav_logo {
@@ -25,14 +23,15 @@
     grid-template-columns: auto auto;
     align-items: center;
     column-gap: 0.75rem;
-    padding: 0.5rem 0 0.5rem 1.5rem;
+    padding: 7px 0 7px 10px;
     justify-content: start;
 }
 
 .nav_link {
     color: #000;
-    margin-bottom: 1.0rem;
+    margin-bottom: 12px;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .nav_icon {
@@ -46,5 +45,44 @@
 
 .nav-active {
     background-color: white;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.sidebar-arrow {
+    text-align: end;
+    padding-right: 15px;
+}
+
+.sidebar-arrow i {
+    font-weight: bold;
+}
+
+.sidebar-floor {
+    text-align: center;
+    font-size: 11px;
+    padding: 0 12px 20px 0;
+}
+
+.sidebar-floor a {
+    text-decoration: none;
+}
+
+.admin-label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn-arrow {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-arrow i {
+    position: absolute;
+    left: 3px;
+    font-size: 15px;
 }
