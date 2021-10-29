@@ -1,0 +1,21 @@
+{
+    "units": [{
+            "id": 1,
+            "name": "Rehabe",
+            "shortCode": "ICU",
+            "group": "Instute",
+            "lastUpdatedDate": "2021-10-10",
+            "createdDate": "2021-10-10",
+            "status": true
+        },
+        {
+            "id": 2,
+            "name": "Hospital",
+            "shortCode": "ECG",
+            "group": "Instute",
+            "lastUpdatedDate": "2021-10-10",
+            "createdDate": "2021-10-10",
+            "status": true
+        }
+    ]
+}
