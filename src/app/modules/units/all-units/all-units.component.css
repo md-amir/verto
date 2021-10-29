@@ -19,6 +19,21 @@ th.mat-sort-header-sorted {
     color: black;
 }
 
+.verto-danger {
+    background-color: var(--verto-danger);
+    color: #a93c3c;
+}
+
+.verto-primary {
+    background-color: var(--verto-primary);
+    color: #2e5440;
+}
+
+.badge {
+    padding: 8px 18px;
+    border-radius: 0.3rem;
+}
+
 
 /* search input */
 

@@ -4,13 +4,19 @@
 }
 
 :root {
-    --nav-width: 68px;
-    --first-color: #4723D9;
-    --first-color-light: #AFA5D9;
-    --white-color: #F7F6FB;
+    --verto-primary: #d4edda;
     --body-font: 'Nunito', sans-serif;
-    --normal-font-size: 1rem;
+    --verto-danger: #ffe6e6;
     --verto-blue: #2c77f0;
+    --verto-favourite: #d0e4ff;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
