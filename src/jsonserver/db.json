@@ -1,21 +1,13 @@
 {
-    "units": [{
-            "id": 1,
-            "name": "Rehabe",
-            "shortCode": "ICU",
-            "group": "Instute",
-            "lastUpdatedDate": "2021-10-10",
-            "createdDate": "2021-10-10",
-            "status": true
-        },
-        {
-            "id": 2,
-            "name": "Hospital",
-            "shortCode": "ECG",
-            "group": "Instute",
-            "lastUpdatedDate": "2021-10-10",
-            "createdDate": "2021-10-10",
-            "status": true
-        }
+    "units": [{ "id": 1, "name": "Hydrogen", "shortCode": "NICUS", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 2, "name": "Helium", "shortCode": "IIC", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 3, "name": "Lithium", "shortCode": "UCG", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 4, "name": "Beryllium", "shortCode": "REHAB", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 5, "name": "Boron", "shortCode": "NICUS", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 6, "name": "Carbon", "shortCode": "OP", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 7, "name": "Nitrogen", "shortCode": "NICUS", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 8, "name": "Oxygen", "shortCode": "NICUS", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 9, "name": "Fluorine", "shortCode": "ADMIN", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 10, "name": "Neon", "shortCode": "NICUS", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false }
     ]
 }
