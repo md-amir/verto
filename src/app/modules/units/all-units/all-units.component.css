@@ -33,11 +33,11 @@
         .verto-paginator {
             display: flex;
             flex-wrap: nowrap;
-            width: 70%;
+            width: 95%;
             background-color: var(--verto-pagination-background);
             margin: 10px auto;
             border-radius: 10px;
-            gap: 10px
+            gap: 5px
         }
         
         .verto-paginator .mat-checkbox {
