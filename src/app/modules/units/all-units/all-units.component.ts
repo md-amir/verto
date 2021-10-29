@@ -15,7 +15,7 @@ type NewType = MatSort;
   styleUrls: ['./all-units.component.css']
 })
 export class AllUnitsComponent implements OnInit {
-  displayedColumns: string[] = ['select', 'star', 'name', 'shortCode', 'group', 'lastUpdatedDate', 'createdDate', 'status', 'option'];
+  displayedColumns: string[] = ['select', 'id', 'star', 'name', 'shortCode', 'group', 'lastUpdatedDate', 'createdDate', 'status', 'option'];
   dataSource: MatTableDataSource<Unit> = new MatTableDataSource<Unit>();
   selection = new SelectionModel<Unit>(true, []);
   @ViewChild('unitPaginator', { static: true }) unitPaginator!: MatPaginator;
