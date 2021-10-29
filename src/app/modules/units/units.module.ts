@@ -7,10 +7,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatMenuModule } from '@angular/material/menu';
+import { ApiService } from 'src/app/services/api.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AllUnitsComponent
   ],
+  providers: [ApiService],
   imports: [
     CommonModule,
     UnitsRoutingModule,
@@ -18,7 +21,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatIconModule,
     MatCheckboxModule,
     MatPaginatorModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule,
   ]
 })
 export class UnitsModule { }

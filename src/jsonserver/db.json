@@ -1,13 +1,32 @@
 {
-    "units": [{ "id": 1, "name": "Hydrogen", "shortCode": "NICUS", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
-        { "id": 2, "name": "Helium", "shortCode": "IIC", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
-        { "id": 3, "name": "Lithium", "shortCode": "UCG", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+    "units": [
+        { "id": 1, "name": "Operation Unit", "shortCode": "NICUS", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 2, "name": "Intencive Cate Unit", "shortCode": "IIC", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 3, "name": "Operation Unit", "shortCode": "UCG", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
         { "id": 4, "name": "Beryllium", "shortCode": "REHAB", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
         { "id": 5, "name": "Boron", "shortCode": "NICUS", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
         { "id": 6, "name": "Carbon", "shortCode": "OP", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
-        { "id": 7, "name": "Nitrogen", "shortCode": "NICUS", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
-        { "id": 8, "name": "Oxygen", "shortCode": "NICUS", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 7, "name": "Out Door Unit", "shortCode": "NICUS", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 8, "name": "Covid 19 Unit", "shortCode": "NICUS", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
         { "id": 9, "name": "Fluorine", "shortCode": "ADMIN", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
-        { "id": 10, "name": "Neon", "shortCode": "NICUS", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false }
+        { "id": 10, "name": "Neon", "shortCode": "NICUS", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 11, "name": "Intencive Cate Unit", "shortCode": "IIC", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 12, "name": "Operation Unit", "shortCode": "UCG", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 13, "name": "Beryllium", "shortCode": "REHAB", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 14, "name": "Boron", "shortCode": "NICUS", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 15, "name": "Carbon", "shortCode": "OP", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 16, "name": "Out Door Unit", "shortCode": "NICUS", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 17, "name": "Covid 19 Unit", "shortCode": "NICUS", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 18, "name": "Fluorine", "shortCode": "ADMIN", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 19, "name": "Neon", "shortCode": "NICUS", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 20, "name": "Intencive Cate Unit", "shortCode": "IIC", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 21, "name": "Operation Unit", "shortCode": "UCG", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 22, "name": "Beryllium", "shortCode": "REHAB", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 23, "name": "Boron", "shortCode": "NICUS", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 24, "name": "Carbon", "shortCode": "OP", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 25, "name": "Out Door Unit", "shortCode": "NICUS", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 26, "name": "Covid 19 Unit", "shortCode": "NICUS", "group": "Functional Office", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false },
+        { "id": 27, "name": "Fluorine", "shortCode": "ADMIN", "group": "Institute/Centers", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": true },
+        { "id": 28, "name": "Neon", "shortCode": "NICUS", "group": "Clinical Department", "lastUpdatedDate": "2021-04-22 11:47", "createdDate": "2021-04-22 11:47", "status": false }
     ]
 }

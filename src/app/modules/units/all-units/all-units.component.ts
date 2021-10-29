@@ -1,9 +1,11 @@
 import { SelectionModel } from '@angular/cdk/collections';
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
+import { ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { PAGE_SIZE, LENGTH, PAGE_SIZE_OPTIONS } from 'src/app/helper/constants';
 import { Unit } from 'src/app/models/unit';
+import { ApiService } from 'src/app/services/api.service';
 
 type NewType = MatSort;
 
@@ -14,18 +16,38 @@ type NewType = MatSort;
 })
 export class AllUnitsComponent implements OnInit {
   displayedColumns: string[] = ['select', 'star', 'name', 'shortCode', 'group', 'lastUpdatedDate', 'createdDate', 'status', 'option'];
-  dataSource = new MatTableDataSource<Unit>(ELEMENT_DATA);
+  dataSource: MatTableDataSource<Unit> = new MatTableDataSource<Unit>();
   selection = new SelectionModel<Unit>(true, []);
   @ViewChild('unitPaginator', { static: true }) unitPaginator!: MatPaginator;
   @ViewChild(MatSort) unitSort!: MatSort;
-  noSelected: number | undefined;
+  noSelected: number | undefined = 0;
+  units: Unit[] = [];
+  pageSize = PAGE_SIZE;
+  length = LENGTH;
+  pageSizeOptions = PAGE_SIZE_OPTIONS;
+  paramFormData: FormData;
+  paginationArr = [] as any;
+  private cdr!: ChangeDetectorRef;
 
 
 
-  constructor() { }
+
+  constructor(private api: ApiService) {
+    this.paramFormData = new FormData();
+  }
 
   ngOnInit(): void {
-    this.noSelected = 5;
+    this.initDefaultParams();
+    this.getAllUnits();
+    this.noSelected = 0;
+  }
+
+  getAllUnits() {
+    this.api.getAllUnits(this.paginationArr).subscribe(response => {
+      this.units = response;
+      this.dataSource = new MatTableDataSource<Unit>(this.units);
+      // this.cdr.detectChanges();
+    });
   }
 
   /** Whether the number of selected elements matches the total number of rows. */
@@ -41,7 +63,6 @@ export class AllUnitsComponent implements OnInit {
       this.selection.clear();
       return;
     }
-
     this.selection.select(...this.dataSource.data);
   }
 
@@ -58,17 +79,19 @@ export class AllUnitsComponent implements OnInit {
       (event.currentTarget as HTMLElement).classList.toggle('star-inactive');
     }
   }
+
+  initDefaultParams() {
+    this.paginationArr[0] = 0;
+    this.paginationArr[1] = 5
+
+  }
+
+  getNext(event: PageEvent) {
+    this.paginationArr[0] = event.pageIndex.toString()
+    this.paginationArr[1] = event.pageSize.toString()
+    this.getAllUnits();
+  }
+
 }
-const ELEMENT_DATA: Unit[] = [
-  { id: 1, name: 'Hydrogen', shortCode: 'NICUS', group: 'Clinical Department', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: true },
-  { id: 2, name: 'Helium', shortCode: 'IIC', group: 'Institute/Centers', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: false },
-  { id: 3, name: 'Lithium', shortCode: 'UCG', group: 'Functional Office', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: true },
-  { id: 4, name: 'Beryllium', shortCode: 'REHAB', group: 'Clinical Department', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: true },
-  { id: 5, name: 'Boron', shortCode: 'NICUS', group: 'Functional Office', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: false },
-  { id: 6, name: 'Carbon', shortCode: 'OP', group: 'Clinical Department', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: true },
-  { id: 7, name: 'Nitrogen', shortCode: 'NICUS', group: 'Institute/Centers', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: true },
-  { id: 8, name: 'Oxygen', shortCode: 'NICUS', group: 'Functional Office', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: false },
-  { id: 9, name: 'Fluorine', shortCode: 'ADMIN', group: 'Institute/Centers', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: true },
-  { id: 10, name: 'Neon', shortCode: 'NICUS', group: 'Clinical Department', lastUpdatedDate: "2021-04-22 11:47", createdDate: "2021-04-22 11:47", status: false },
-];
+
 
