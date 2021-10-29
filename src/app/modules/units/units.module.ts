@@ -6,6 +6,7 @@ import { MatTableModule } from '@angular/material/table'
 import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   declarations: [
     AllUnitsComponent
@@ -16,7 +17,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     MatIconModule,
     MatCheckboxModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatMenuModule
   ]
 })
 export class UnitsModule { }

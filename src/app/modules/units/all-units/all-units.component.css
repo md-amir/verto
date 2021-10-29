@@ -10,17 +10,16 @@
     .search-filter>* {
         width: unset;
     }
-    /* .search {
-    flex: 1;
-}
-
-.filter {
-    flex: 1;
-}
-
-.star {
-    flex: 1;
-} */
+    
+    .search {}
+    
+    .filter {}
+    
+    .star {}
+    
+    .selected-margin {
+        margin: 0 12px;
+    }
     
     .search input {
         height: 40px !important;

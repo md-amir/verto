@@ -18,12 +18,14 @@ export class AllUnitsComponent implements OnInit {
   selection = new SelectionModel<Unit>(true, []);
   @ViewChild('unitPaginator', { static: true }) unitPaginator!: MatPaginator;
   @ViewChild(MatSort) unitSort!: MatSort;
+  noSelected: number | undefined;
 
 
 
   constructor() { }
 
   ngOnInit(): void {
+    this.noSelected = 5;
   }
 
   /** Whether the number of selected elements matches the total number of rows. */
