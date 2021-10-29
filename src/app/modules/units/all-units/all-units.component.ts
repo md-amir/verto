@@ -46,7 +46,9 @@ export class AllUnitsComponent implements OnInit {
     this.api.getAllUnits(this.paginationArr).subscribe(response => {
       this.units = response;
       this.dataSource = new MatTableDataSource<Unit>(this.units);
-      // this.cdr.detectChanges();
+      if (this.length != response.size) {
+        this.length = 28;
+      }
     });
   }
 
