@@ -83,7 +83,7 @@ export class AllUnitsComponent implements OnInit {
   }
 
   initDefaultParams() {
-    this.paginationArr[0] = 0;
+    this.paginationArr[0] = 1;
     this.paginationArr[1] = 5
 
   }
